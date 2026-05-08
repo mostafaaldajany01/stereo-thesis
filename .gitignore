@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# IDEs
+.idea/
+.vscode/
+
+# Project-specific output
+out_sgbm/
+out_fs/
+out_ffs/
+images/
+*.npz
+*.ply
+
+# Claude Code
+.claude/
+
+# OS
+Thumbs.db
+.DS_Store
