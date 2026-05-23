@@ -24,7 +24,6 @@ dist/
 # Project-specific output
 out_sgbm/
 out_fs/
-images/
 *.npz
 *.ply
 
