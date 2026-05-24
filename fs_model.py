@@ -1,28 +1,21 @@
-# fs_model.py  —  single-image FoundationStereo inference
 import sys, os
 import warnings
 warnings.filterwarnings('ignore')
 
-# ── Point this to your FoundationStereo repo folder ──────────────────────────
+# Point this to your FoundationStereo repo folder 
 FS_ROOT = r'path\to\FoundationStereo'
 sys.path.insert(0, FS_ROOT)
-# ─────────────────────────────────────────────────────────────────────────────
 
-# ── Input Config ──────────────────────────────────────────────────────────────
 IMG_SET  = '188/3d'
 IMG_NAME = '20260410_170144'
 MODEL_PATH = os.path.join(FS_ROOT, 'pretrained_models', '11-33-40', 'model_best_bp2.pth')
-# ─────────────────────────────────────────────────────────────────────────────
 
-# ── FS Inference Config ───────────────────────────────────────────────────────
-VALID_ITERS = 50      # number of refinement updates (more = slower but better)
-SCALE       = 1.0     # image scaling factor (1.0 = full resolution)
+VALID_ITERS = 50      
+SCALE       = 1.0     
 HIERA       = False   # use hierarchical mode (slower, may help with >1K images)
-# ─────────────────────────────────────────────────────────────────────────────
 
-# ── Point Cloud Config ────────────────────────────────────────────────────────
 REMOVE_INVISIBLE   = False
-ZFAR               = 100000   # max depth in mm
+ZFAR               = 100000
 SOR_ENABLED        = False
 SOR_NB_NEIGHBORS   = 30
 SOR_STD_RATIO      = 1.5
@@ -36,7 +29,6 @@ X_FILTER_ENABLED = False
 X_FILTER_RANGE   = 1500
 Y_FILTER_ENABLED = False
 Y_FILTER_RANGE   = 2500
-# ─────────────────────────────────────────────────────────────────────────────
 
 import numpy as np
 import open3d as o3d
