@@ -63,7 +63,7 @@ images/
 
 ## Usage
 
-### Batch mode (processes all baselines)
+### Batch mode
 
 ```bash
 # SGBM — no GPU needed
@@ -102,7 +102,7 @@ All tunable parameters are defined as constants at the top of each script:
 ## Output
 
 - `disparity_N.png` — color-mapped disparity visualization
-- `pointcloud_N.ply` — 3D point cloud (open with MeshLab, CloudCompare, or Open3D)
+- `pointcloud_N.ply` — 3D point cloud
 
 ## Setup for FS backend
 
